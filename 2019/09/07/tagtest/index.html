@@ -4,25 +4,24 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
   
-    <title>textXMind | 我不要你觉得，我要我觉得</title>
+    <title>tagtest | 我不要你觉得，我要我觉得</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Tommy Chi">
     
 
     
-    <meta name="description" content="mongo –Can’t find a codec for class java.util.LinkedHashMap.123456789101112131415161718192021222324252627public static Map&amp;lt;String,Object&amp;gt; changeElementToBasicDBObject(Map&amp;lt;String,Object&amp;gt; pa">
-<meta name="keywords" content="aa">
+    <meta name="description" content="lkllkllj">
 <meta property="og:type" content="article">
-<meta property="og:title" content="textXMind">
-<meta property="og:url" content="https://itommychi.github.io/2019/09/04/textXMind/index.html">
+<meta property="og:title" content="tagtest">
+<meta property="og:url" content="https://itommychi.github.io/2019/09/07/tagtest/index.html">
 <meta property="og:site_name" content="我不要你觉得，我要我觉得">
-<meta property="og:description" content="mongo –Can’t find a codec for class java.util.LinkedHashMap.123456789101112131415161718192021222324252627public static Map&amp;lt;String,Object&amp;gt; changeElementToBasicDBObject(Map&amp;lt;String,Object&amp;gt; pa">
+<meta property="og:description" content="lkllkllj">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-04T11:57:51.767Z">
+<meta property="og:updated_time" content="2019-09-07T06:17:05.985Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="textXMind">
-<meta name="twitter:description" content="mongo –Can’t find a codec for class java.util.LinkedHashMap.123456789101112131415161718192021222324252627public static Map&amp;lt;String,Object&amp;gt; changeElementToBasicDBObject(Map&amp;lt;String,Object&amp;gt; pa">
+<meta name="twitter:title" content="tagtest">
+<meta name="twitter:description" content="lkllkllj">
 
     
     <link rel="alternative" href="atom.xml" title="我不要你觉得，我要我觉得" type="application/atom+xml">
@@ -78,14 +77,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2019/09/04/textXMind/" title="textXMind" itemprop="url">textXMind</a>
+      <a href="/2019/09/07/tagtest/" title="tagtest" itemprop="url">tagtest</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Tommy Chi" target="_blank" itemprop="author">Tommy Chi</a>
 		
   <p class="article-time">
-    <time datetime="2019-09-04T11:47:05.000Z" itemprop="datePublished"> Published 2019-09-04</time>
+    <time datetime="2019-09-07T06:15:25.000Z" itemprop="datePublished"> Published 2019-09-07</time>
     
   </p>
 </header>
@@ -94,22 +93,21 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#mongo-–Can’t-find-a-codec-for-class-java-util-LinkedHashMap"><span class="toc-number">1.</span> <span class="toc-text">mongo –Can’t find a codec for class java.util.LinkedHashMap.</span></a></li></ol>
+			
 		
 		</div>
 		
-		<h2 id="mongo-–Can’t-find-a-codec-for-class-java-util-LinkedHashMap"><a href="#mongo-–Can’t-find-a-codec-for-class-java-util-LinkedHashMap" class="headerlink" title="mongo –Can’t find a codec for class java.util.LinkedHashMap."></a>mongo –Can’t find a codec for class java.util.LinkedHashMap.</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Map&lt;String,Object&gt; <span class="title">changeElementToBasicDBObject</span><span class="params">(Map&lt;String,Object&gt; param)</span></span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    Set&lt;String&gt; keyset = param.keySet();</span><br><span class="line">    <span class="keyword">for</span> (String key : keyset) &#123;</span><br><span class="line">        Object value = param.get(key);</span><br><span class="line">        <span class="keyword">if</span> ( (value <span class="keyword">instanceof</span> Map)) &#123;</span><br><span class="line">            value = <span class="keyword">new</span> BasicDBObject((Map)value);</span><br><span class="line">            param.put(key,value);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (value <span class="keyword">instanceof</span> List)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!(((List) value).get(<span class="number">0</span>) <span class="keyword">instanceof</span> Map))&#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            List&lt;Map&gt; maps = JSON.parseArray(JSON.toJSONString(value), Map.class);</span><br><span class="line"></span><br><span class="line">            List&lt;BasicDBObject&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">            <span class="keyword">for</span> (Map map : maps) &#123;</span><br><span class="line">                list.add(<span class="keyword">new</span> BasicDBObject(map));</span><br><span class="line">            &#125;</span><br><span class="line">            value = list;</span><br><span class="line">            param.put(key,value);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> param;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+		<p>lkllkllj</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/aa-bb/">aa,bb</a>
+</div>
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/aa/">aa</a>
-  </div>
 
 </div>
 
@@ -122,17 +120,10 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2019/09/07/img/" title="img">
-  <span>
-  img</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2019/09/04/start0904/"  title="start0904">
- <span>start0904
+<a href="/2019/09/07/bb/"  title="bb">
+ <span>bb
 </span>
 </a>
 </div>
