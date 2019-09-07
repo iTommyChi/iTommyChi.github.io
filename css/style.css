@@ -467,23 +467,21 @@ body >header a {
   text-align: center;
   margin: auto;
   width: 86%;
-  font-family: "coveredbyyourgrace-webfont";
-  font-size: 220%;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-size: 160%;
+  line-height: 1.7;
+  font-weight: normal;
 }
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    margin-top: 0.4em;
-    font-size: 260%;
+    margin-top: 0.3em;
+    font-size: 190%;
   }
 }
 @media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
     margin-top: 0.4em;
-    font-size: 300%;
-    line-height: 1.5;
+    font-size: 220%;
   }
 }
 #textlogo h2.blog-motto {
@@ -2144,10 +2142,8 @@ footer {
   }
 }
 .copyright {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "coveredbyyourgrace-webfont";
-  font-size: 1.3em;
+  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-size: 1em;
   width: 100%;
   color: #fff;
   text-align: center;
