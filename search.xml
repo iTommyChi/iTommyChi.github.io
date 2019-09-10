@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[base9]]></title>
+    <url>%2F2019%2F09%2F09%2Fbase9%2F</url>
+    <content type="text"><![CDATA[ASCII Unicode UTF-8]]></content>
+      <categories>
+        <category>base</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Countdown]]></title>
     <url>%2F2019%2F09%2F07%2FCountdown%2F</url>
     <content type="text"><![CDATA[时间已经过去一周了]]></content>
