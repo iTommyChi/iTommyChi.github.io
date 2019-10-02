@@ -4,6 +4,9 @@
     <title><![CDATA[00后的军训]]></title>
     <url>%2F2019%2F10%2F02%2F00%E5%90%8E%E7%9A%84%E5%86%9B%E8%AE%AD%2F</url>
     <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[beeline 执行命令报：Error: Invalid time unit l (state=,code=0)]]></title>
