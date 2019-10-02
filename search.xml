@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[beeline 执行命令报：Error: Invalid time unit l (state=,code=0)]]></title>
+    <url>%2F2019%2F10%2F02%2Fbeeline-%E6%89%A7%E8%A1%8C%E5%91%BD%E4%BB%A4%E6%8A%A5%EF%BC%9AError-Invalid-time-unit-l-state-code-0%2F</url>
+    <content type="text"><![CDATA[这是一个bug把Hive的配置文件hive-site.xml这个参数值hive.server2.long.polling.timeout单位L修改为ms，重启Hadoop问题解决 hive.server2.long.polling.timeout 5000ms Time in milliseconds that HiveServer2 will wait, before responding to asynchronous calls that use long polling 使用的版本是：hive-0.13.1-cdh5.2.1，已经确认后续的版本已经修复这个BUG。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[base9]]></title>
     <url>%2F2019%2F09%2F09%2Fbase9%2F</url>
     <content type="text"><![CDATA[ASCII Unicode UTF-8]]></content>

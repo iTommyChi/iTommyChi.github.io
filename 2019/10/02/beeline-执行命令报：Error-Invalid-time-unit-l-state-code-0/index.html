@@ -55,17 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="Software Engineer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tommy Chi">
-<meta property="og:url" content="https://itommychi.github.io/tags/life/index.html">
+  <meta name="description" content="这是一个bug把Hive的配置文件hive-site.xml这个参数值hive.server2.long.polling.timeout单位L修改为ms，重启Hadoop问题解决       hive.server2.long.polling.timeout     5000ms     Time in milliseconds that HiveServer2 will wait, before">
+<meta property="og:type" content="article">
+<meta property="og:title" content="beeline 执行命令报：Error: Invalid time unit l (state=,code=0)">
+<meta property="og:url" content="https://itommychi.github.io/2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/index.html">
 <meta property="og:site_name" content="Tommy Chi">
-<meta property="og:description" content="Software Engineer">
+<meta property="og:description" content="这是一个bug把Hive的配置文件hive-site.xml这个参数值hive.server2.long.polling.timeout单位L修改为ms，重启Hadoop问题解决       hive.server2.long.polling.timeout     5000ms     Time in milliseconds that HiveServer2 will wait, before">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-02T03:01:23.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tommy Chi">
-<meta name="twitter:description" content="Software Engineer">
-  <link rel="canonical" href="https://itommychi.github.io/tags/life/">
+<meta name="twitter:title" content="beeline 执行命令报：Error: Invalid time unit l (state=,code=0)">
+<meta name="twitter:description" content="这是一个bug把Hive的配置文件hive-site.xml这个参数值hive.server2.long.polling.timeout单位L修改为ms，重启Hadoop问题解决       hive.server2.long.polling.timeout     5000ms     Time in milliseconds that HiveServer2 will wait, before">
+  <link rel="canonical" href="https://itommychi.github.io/2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/">
 
 
 <script id="page-configurations">
@@ -73,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Tag: life | Tommy Chi</title>
+  <title>beeline 执行命令报：Error: Invalid time unit l (state=,code=0) | Tommy Chi</title>
   
 
 
@@ -261,88 +262,136 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block tag">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">life<small>Tag</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://itommychi.github.io/2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tommy Chi">
+      <meta itemprop="description" content="Software Engineer">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tommy Chi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">beeline 执行命令报：Error: Invalid time unit l (state=,code=0)
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-10-02 10:48:08 / Modified: 11:01:23" itemprop="dateCreated datePublished" datetime="2019-10-02T10:48:08+08:00">2019-10-02</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p>这是一个bug<br>把Hive的配置文件hive-site.xml这个参数值hive.server2.long.polling.timeout<br>单位L修改为ms，重启Hadoop问题解决</p>
+ <property>
+    <name>hive.server2.long.polling.timeout</name>
+    <value>5000ms</value>
+    <description>Time in milliseconds that HiveServer2 will wait, before responding to asynchronous calls that use long polling</description>
+ </property>
 
-  
-  
 
-  
+<p> 使用的版本是：hive-0.13.1-cdh5.2.1，已经确认后续的版本已经修复这个BUG。</p>
+
+    </div>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2019/09/07/Countdown/" itemprop="url">
-            <span itemprop="name">Countdown</span>
-          </a>
+      
+
+      <footer class="post-footer">
+
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-07T15:44:33+08:00"
-              content="2019-09-07">
-          09-07
-        </time>
-      </div>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/09/09/base9/" rel="next" title="base9">
+                  <i class="fa fa-chevron-left"></i> base9
+                </a>
+              
+            </div>
 
-    </header>
-  </article>
+            <span class="post-nav-divider"></span>
 
-
-
-    </div>
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
           
+    
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+  
 
         </div>
           
@@ -357,6 +406,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -535,6 +589,27 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function disqus_config() {
+    this.page.url = "https://itommychi.github.io/2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/";
+    this.page.identifier = "2019/10/02/beeline-执行命令报：Error-Invalid-time-unit-l-state-code-0/";
+    this.page.title = 'beeline 执行命令报：Error: Invalid time unit l (state=,code=0)';};
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://Tommy.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+  
 </script>
 
 </body>
